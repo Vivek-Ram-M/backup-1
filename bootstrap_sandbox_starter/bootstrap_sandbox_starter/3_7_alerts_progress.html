@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous"
+    /> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+    <title>Bootstrap Sandbox</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 class="display-3 text-center my-4">Alerts & Progress Bars</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="dropdown">
+              <button
+                class="btn btn-primary btn-block dropdown-toggle"
+                type="button"
+                data-toggle="dropdown"
+              >
+                2: Utilities
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="2_2_basic_typography.html"
+                  >2.2 Basic Typography</a
+                >
+                <a class="dropdown-item" href="2_3_text_alignment_display.html"
+                  >2.3 Text Alignment & Display</a
+                >
+                <a class="dropdown-item" href="2_4_floats_position.html"
+                  >2.4 Floats & Position</a
+                >
+                <a class="dropdown-item" href="2_5_colors_background.html"
+                  >2.5: Colors & Background</a
+                >
+                <a class="dropdown-item" href="2_6_spacing.html">2.6 Spacing</a>
+                <a class="dropdown-item" href="2_7_sizing.html">2.7 Sizing</a>
+                <a class="dropdown-item" href="2_8_breakpoints.html"
+                  >2.8 Breakpoints</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="dropdown">
+              <button
+                class="btn btn-success btn-block dropdown-toggle"
+                type="button"
+                data-toggle="dropdown"
+              >
+                3: CSS Components
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="3_2_buttons.html">3.2 Buttons</a>
+                <a class="dropdown-item" href="3_3_navbar.html">3.3 Navbar</a>
+                <a class="dropdown-item" href="3_4_list_groups_badges.html"
+                  >3.4 List Groups & Badges</a
+                >
+                <a class="dropdown-item" href="3_5_forms.html">3.5 Forms</a>
+                <a class="dropdown-item" href="3_6_input_groups.html"
+                  >3.6 Input Groups</a
+                >
+                <a class="dropdown-item" href="3_7_alerts_progress.html"
+                  >3.7 Alerts & Progress</a
+                >
+                <a class="dropdown-item" href="3_8_tables_pagination.html"
+                  >3.8 Tables & Pagination</a
+                >
+                <a class="dropdown-item" href="3_9_cards.html">3.9 Cards</a>
+                <a class="dropdown-item" href="3_10_media_object.html"
+                  >3.10 Media Objects</a
+                >
+                <a class="dropdown-item" href="3_11_jumbotron.html"
+                  >3.11 Jumbotron</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="dropdown">
+              <button
+                class="btn btn-warning btn-block dropdown-toggle"
+                type="button"
+                data-toggle="dropdown"
+              >
+                4: Grid & Flexbox
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="4_2_grid_system.html"
+                  >4.2 Grid System</a
+                >
+                <a class="dropdown-item" href="4_3_grid_alignment.html"
+                  >4.3 Grid Alignment</a
+                >
+                <a class="dropdown-item" href="4_4_flexbox.html">4.4 Flexbox</a>
+                <a
+                  class="dropdown-item"
+                  href="4_5_auto_margins_wrapping_order.html"
+                  >4.5 Auto Margins & Wrap</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="dropdown">
+              <button
+                class="btn btn-danger btn-block dropdown-toggle"
+                type="button"
+                data-toggle="dropdown"
+              >
+                5: JavaScript Widgets
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="5_2_carousel.html"
+                  >5.2 Carousel</a
+                >
+                <a class="dropdown-item" href="5_3_collapse.html"
+                  >5.3 Collapse</a
+                >
+                <a class="dropdown-item" href="5_4_tooltips.html"
+                  >5.4 Tooltips</a
+                >
+                <a class="dropdown-item" href="5_5_popovers.html"
+                  >5.5 Popovers</a
+                >
+                <a class="dropdown-item" href="5_6_modals.html">5.6 Modals</a>
+                <a class="dropdown-item" href="5_7_scrollspy.html"
+                  >5.7 ScrollSpy</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+    </header>
+
+    <div class="container">
+      <!--####################START HERE######################-->
+
+      <!-- ALERTS -->
+      <div class="alert alert-primary">
+        <strong>Primary</strong> Blog post added
+      </div>
+
+      <div class="alert alert-secondary">
+        <strong>Secondary</strong> Blog post added
+      </div>
+
+      <div class="alert alert-success">
+        <strong>Success</strong> Blog post added
+      </div>
+
+      <div class="alert alert-danger">
+        <strong>Danger</strong> Please check the log files
+      </div>
+
+      <div class="alert alert-info">
+        <strong>Info</strong>
+        You have a new message
+      </div>
+
+      <div class="alert alert-warning">
+        <strong>Warning</strong> Please check the log files
+      </div>
+
+      <div class="alert alert-light">
+        <strong>Light</strong> Please check the log files
+      </div>
+
+      <div class="alert alert-dark">
+        <strong>Dark</strong> Please check the log files
+      </div>
+
+      <!-- DISMISSABLE ALERT -->
+      <div class="alert alert-success alert-dismissible">
+        <button type="button" class=" btn-close" data-bs-dismiss = "alert"/>
+        </button>
+        <strong>Dismissable</strong> Blog post added
+      </div>
+
+    <div class="alert alert-success alert-dismissible">
+        <button class="btn-close" data-bs-dismiss="alert"></button>
+        <p>Dismiss me</p>
+    </div>
+
+
+    <div class="alert alert-success">
+        <span class="lead">Alert with <a href="#" class="alert-link">link</a></span>
+    </div>
+
+    <div class="alert alert-danger">
+        <h4 class="alert-heading">Alert heading</h4>
+        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, maiores. <a href="#" class="alert-link">Link[];</a></p>
+    </div>
+    
+
+    
+    <div class="alert alert-success d-flex align-items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-exclamation-triangle-fill me-2" style="width:1em ; height :1em" viewBox="0 0 16 16" role="img" aria-label="Warning:">
+            <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+        </svg>
+          <p class="lead mb-0 ">Alert with icon</p>
+        </div>
+
+    <div class="alert alert-success alert-dismissible fade show">
+        <button class="btn-close" data-bs-dismiss="alert"></button>
+        <p>Dismissible alert with fade and show</p>
+        
+    </div>
+    <!-- EXTRA CONTENT -->
+    <div class="alert alert-primary">
+        <h4 class="alert-heading">Congrats!</h4>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+            dignissimos eius, sit quo assumenda totam commodi ipsum saepe
+            molestias eligendi exercitationem repudiandae qui facilis deserunt
+            non, harum ab quam? Cumque
+        </p>
+        <hr />
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, odio?
+        </p>
+    </div>
+    
+    <br />
+    <br />
+    
+    <p class="display-5 text-center">Progress Bar</p>
+    <!-- PROGRESS BARS -->
+    <div class="progress">
+        <div class="progress-bar" style="width:20%;"></div>
+    </div>
+    <div class="progress  mt-3" >
+        <div class="progress-bar w-25 " >25%</div>
+        <p class="d-flex justify-content-center text-center "  style="flex-direction:column">75%</p>
+    </div>
+      <br />
+      <div class="progress">
+        <div class="progress-bar bg-success w-25"></div>
+      </div>
+      <br />
+      <div class="progress-stacked" style="width: 50%;">
+        <div class="progress-bar bg-success w-25">25%</div>
+        <div class="progress-bar bg-danger w-25">25%</div>
+        <div class="progress-bar w-50  bg-transparent text-dark"> 50%</div>
+      </div>
+      <!-- <br /> -->
+      <div class="progress mt-3">
+        <div class="progress-bar progress-bar-striped w-25"></div>
+      </div>
+
+      <br />
+      <div class="progress">
+        <div class="progress-bar bg-success w-25">25%</div>
+        <div class="progress-bar bg-danger w-25">25%</div>
+        <div class="progress-bar w-50  bg-transparent text-dark"> 50%</div>
+      </div>
+
+
+      <div class="progress-stacked mt-3">
+        <div class="progress w-25">
+            <div class="progress-bar bg-dark progress-bar-animated">25%</div>
+        </div>
+        <div class="progress w-75">
+            <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated">25%</div>
+        </div>
+      </div>
+      <div>
+        <div></div>
+      </div>
+      <br />
+      <!-- HEIGHT -->
+      <div>
+        <div></div>
+      </div>
+      <br />
+      <!-- STRIPED -->
+      <div>
+        <div></div>
+      </div>
+      <br />
+      <!-- ANIMATED -->
+      <div>
+        <div></div>
+      </div>
+      <br />
+      <!-- MULTIPLE BARS -->
+      <div class="progress-stacked">
+        <div class="progress" style="width:40%">
+          <div class="progress-bar progress-bar-striped bg-dark progress-bar-animated">
+              45%
+          </div>
+        </div>
+        <div class="progress" style="width:40%">
+          <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated" >
+            20%
+          </div>
+        </div>
+        <div class="progress" style="width: 35%;">
+          <div class="progress-bar progress-bar-striped ">
+            35%
+          </div>
+        </div>
+      </div>
+    <!-- ./container -->
+    <div style="margin-top: 500px"></div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $("#myAlert").on("closed.bs.alert", function () {
+        console.log("Alert closed...");
+      });
+    </script>
+  </body>
+</html>

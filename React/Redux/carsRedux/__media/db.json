@@ -1,0 +1,114 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Vivek Ram.M"
+    },
+    {
+      "name": "Miss Heather Jakubowski",
+      "id": 3
+    },
+    {
+      "name": "Lila Cassin",
+      "id": 4
+    },
+    {
+      "name": "Miranda Walker",
+      "id": 5
+    }
+  ],
+  "albums": [
+    {
+      "id": 10,
+      "userId": 1,
+      "title": "First  Album"
+    },
+    {
+      "userId": 1,
+      "title": "Rustic Concrete Pizza",
+      "id": 11
+    },
+    {
+      "userId": 1,
+      "title": "Awesome Rubber Keyboard",
+      "id": 12
+    },
+    {
+      "userId": 4,
+      "title": "Recycled Plastic Shoes",
+      "id": 26
+    },
+    {
+      "userId": 3,
+      "title": "Refined Wooden Hat",
+      "id": 27
+    },
+    {
+      "userId": 3,
+      "title": "Oriental Soft Keyboard",
+      "id": 28
+    },
+    {
+      "userId": 3,
+      "title": "Awesome Cotton Sausages",
+      "id": 29
+    },
+    {
+      "userId": 4,
+      "title": "Practical Cotton Hat",
+      "id": 30
+    },
+    {
+      "userId": 3,
+      "title": "Handmade Wooden Shoes",
+      "id": 31
+    },
+    {
+      "userId": 3,
+      "title": "Refined Soft Fish",
+      "id": 32
+    },
+    {
+      "userId": 3,
+      "title": "Handmade Rubber Bacon",
+      "id": 33
+    },
+    {
+      "userId": 3,
+      "title": "Elegant Cotton Chicken",
+      "id": 34
+    },
+    {
+      "userId": 5,
+      "title": "Rustic Fresh Soap",
+      "id": 35
+    },
+    {
+      "userId": 1,
+      "title": "Small Fresh Shirt",
+      "id": 36
+    }
+  ],
+  "photos": [
+    {
+      "albumId": 10,
+      "url": "https://loremflickr.com/150/150/abstract?lock=19729",
+      "id": 1
+    },
+    {
+      "albumId": 11,
+      "url": "https://loremflickr.com/150/150/abstract?lock=60085",
+      "id": 2
+    },
+    {
+      "albumId": 26,
+      "url": "https://loremflickr.com/150/150/abstract?lock=79755",
+      "id": 3
+    },
+    {
+      "albumId": 26,
+      "url": "https://loremflickr.com/150/150/abstract?lock=1026",
+      "id": 4
+    }
+  ]
+}

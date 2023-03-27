@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drag and drop</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .drop-area {
+        width: 100px;
+        height: 100px;
+        float: left;
+        margin-right: 10px;
+        /* from Farhana Noushad (internal) (internal) to everyone:    12:29 PM */
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        border: 8px ridge black;
+        border-radius: 50%;
+      }
+      .drop-zoneover {
+        opacity: 0.5;
+      }
+      #myDraggableElmnt {
+        width: 50px;
+        height: 50px;
+        background-image: linear-gradient(90deg, yellow, rgb(154, 70, 215));
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="drop-area" style="border-color: rgb(248, 13, 174)">
+      <div id="myDraggableElmnt" draggable="true"></div>
+    </div>
+    <!-- from Farhana Noushad (internal) (internal) to everyone:    12:30 PM -->
+    <div class="drop-area" style="border-color: rgb(48, 223, 223)"></div>
+    <script>
+      const draggableElmnt = document.querySelector("#myDraggableElmnt");
+      //when dragging starts, it need to hold the id (here its id) of the innerdiv(dragging item).
+      //the data is stored with the help of dataTransfer object.
+      draggableElmnt.addEventListener("dragstart", (event) => {
+        event.dataTransfer.setData("text/plain", draggableElmnt.id);
+      });
+      for (const dropArea of document.querySelectorAll(".drop-area")) {
+        //over the zone
+        dropArea.addEventListener("dragover", (event) => {
+          event.preventDefault();
+          dropArea.classList.add("drop-zoneover");
+        });
+        //when leaving the div (after picking or dropping)
+        dropArea.addEventListener("dragleave", (event) => {
+          dropArea.classList.remove("drop-zoneover");
+        });
+        //Dropped on the desired area.
+        dropArea.addEventListener("drop", (event) => {
+          event.preventDefault();
+          const droppedElmntId = event.dataTransfer.getData("text/plain");
+          const droppedElmnt = document.getElementById(droppedElmntId);
+          dropArea.appendChild(droppedElmnt);
+          dropArea.classList.remove("drop-zoneover");
+        });
+      }
+    </script>
+  </body>
+</html>

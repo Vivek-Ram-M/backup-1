@@ -1,0 +1,57 @@
+.meals {
+  max-width: 60rem;
+  width: 90%;
+  margin: 2rem auto;
+  animation: meals-appear 1s ease-out forwards;
+}
+
+.meals ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.loading {
+  animation: spinner 0.2s infinite ease-out;
+}
+.spinner {
+  font-size: 3rem;
+  text-align: center;
+  color: #8a2b06;
+  /* width: 30em; */
+}
+.error {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+@keyframes meals-appear {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* @keyframes spinner {
+  0% {
+    rotate: 0deg;
+  }
+  25% {
+    rotate: 90deg;
+  }
+  50% {
+    rotate: 180deg;
+  }
+  75% {
+    rotate: 270deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+} */

@@ -1,0 +1,63 @@
+.form-control__input {
+  display: block;
+  width: 100%;
+  /* margin-bottom: 0.8em; */
+  /* background-color: aqua; */
+}
+.form-control__input:focus {
+  border: 0.5px solid blue;
+}
+.form-actions {
+  text-align: end;
+  /* margin-top: 1.5em; */
+}
+.btn {
+  cursor: pointer;
+  border: 1px solid #8a2b06;
+  padding: 0.3rem 1.5rem;
+  border-radius: 25px;
+  /* margin-left: em; */
+}
+.btn:hover,
+.btn:active {
+  color: #ffe6dc;
+  background-color: #7a2706;
+}
+.btn-cancel {
+  background-color: transparent;
+  margin-right: 0.7em;
+}
+
+.btn-submit {
+  background-color: #8a2b06;
+  color: #fff;
+}
+.form-control__label {
+  display: block;
+  margin-bottom: 0.25em;
+  font-weight: bold;
+}
+.form {
+  max-width: 60%;
+  margin: 1em auto 0;
+  padding: 1em;
+  box-shadow: 0 1em 2em rgba(0, 0, 0, 0.15);
+  border-radius: 14px;
+  /* height: 12rem; */
+  /* overflow-y: auto; */
+}
+
+.invalid label {
+  color: red;
+}
+
+.invalid input {
+  background-color: rgba(255, 0, 0, 0.333);
+  border: 1px solid red;
+}
+.error-text {
+  margin: 0;
+}
+.form-control {
+  margin-bottom: 0.5em;
+}

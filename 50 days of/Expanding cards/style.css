@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+:root {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Oswald";
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.panel-1 {
+  background-image: url("./download.jpg");
+}
+.panel-2 {
+  background-image: url("./fantasy-3077928__480.jpg");
+}
+.panel-3 {
+  background-image: url("./download\ \(2\).jpg");
+}
+.panel-4 {
+  background-image: url("./download\ \(3\).jpg");
+}
+.panel-5 {
+  background-image: url("./download\ \(4\).jpg");
+}
+
+.container {
+  display: flex;
+  height: 80vh;
+  gap: 0.5em;
+  /* flex: 0 0 60%; */
+  width: 90vw;
+}
+.panel {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50px;
+  /* height: 100%; */
+  /* top: 0; */
+  position: relative;
+  /* flex: 0 0 10%; */
+  flex: 0.5;
+  transition: all 0.4s;
+}
+.panel__heading {
+  position: absolute;
+  bottom: 0.5em;
+  left: 0.5em;
+  opacity: 0;
+  color: #fff;
+  /* width: 100%; */
+  /* transition: all 0.3s ease-in 0.3s; */
+}
+.active {
+  /* flex: 0 0 50%; */
+  flex: 5;
+}
+.active h3 {
+  opacity: 1;
+  transition: all 0.4s ease-in 0.3s;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+  .panel:nth-last-of-type(4),
+  .panel:nth-last-of-type(5) {
+    display: none;
+  }
+}

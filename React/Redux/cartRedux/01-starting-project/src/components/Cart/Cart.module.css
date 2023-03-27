@@ -1,0 +1,40 @@
+.cart {
+  max-width: 30rem;
+  background-color: #313131;
+  color: white;
+  animation: slider-in 0.3s ease-in;
+}
+
+.cart h2 {
+  font-size: 1.25rem;
+  margin: 0.5rem 0;
+}
+
+.cart ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@keyframes slider-in {
+  0% {
+    /* translate: 0 -1.3em; */
+    scale: 0.5;
+  }
+  50% {
+    /* translate: 0 -1em; */
+    scale: 0.75;
+  }
+  75% {
+    /* translate: 0 -0.5em; */
+    scale: 0.9;
+  }
+  100% {
+    /* translate: 0 0; */
+    scale: 1;
+  }
+}
+.cart-placeholder {
+  text-align: center;
+  margin: 1em;
+}
